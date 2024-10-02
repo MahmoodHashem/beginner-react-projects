@@ -1,33 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import { useState } from "react";
+import Accordion from "./components/Question"
+import questions from "./assets/questions"
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [isOpen, setIsOpen] = useState(null);
+
+  const [selected, setSelected] = useState(false)
+  const [multiple, setMultiple] = useState([])
+  
+
+  function toggle(id) {  
+    setIsOpen( isOpen => isOpen === id ? null : id)
+  }
+
+  function handleMultiple(id){
+      const copy = [...multiple]
+
+      const x = copy.indexOf(id)
+      if(x === -1){
+         copy.push(id)
+        }else{
+          
+          copy.splice(x, 1); 
+        }
+    setMultiple(copy)
+  }
+
+  function toggleEnableMultiple(){
+    setSelected(s => !s)
+  }
+
+  const qa = questions.map((question) => {
+    return <Accordion
+      key={question.id}
+      toggle={ selected ?  () => handleMultiple(question.id) : ()=> toggle(question.id)}
+      state={ selected ?  multiple.indexOf(question.id) !== -1 : isOpen === question.id}
+      question={question.question}
+      answer={question.answer} />
+  })
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <div className="container">
+
+        <button className="btn" onClick={toggleEnableMultiple}>
+         {selected ? "Disable Multiple Selection" : "Enable multiple Selection"}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+        {qa}
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
