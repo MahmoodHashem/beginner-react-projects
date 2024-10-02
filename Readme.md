@@ -4,13 +4,17 @@ A collection of my beginner React projects to practice and showcase my skills.
 
 ## Projects Overview
 
-##### **Accordion**
+### **Accordion**
 
 ![Screenshot](./accordion/public/screenshot.png)
 
-- **Live Demo:** [Live Link](https://MahmoodHashem.github.io/beginner-react-projects/accordion)
 - **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/accordion)
 
+### **Color Generator**
+
+![Screenshot](./random-color-generator/public/screenshot.gif)
+
+- **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/random-color-generator)
 ## How to Use This Repository
 
 1. Clone the repository:
