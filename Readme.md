@@ -25,13 +25,12 @@ A collection of my beginner React projects to practice and showcase my skills.
 - **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/star-rating)
 - **Live:** [Live Link](https://beginner-react-projects-seven.vercel.app/)
 
-### **Star Rating App**
+### **Image Slider app**
 
 ![Screenshot](./image-slider/public/screenshot.png)
 
 - **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/image-slider)
-- **Live:** [Live Link](https://beginner-react-projects-imageslider.vercel.app)
-
+- **Live:** [Live Link](https://beginner-react-projects-seven.vercel.app/)
 
 ## How to Use This Repository
 
