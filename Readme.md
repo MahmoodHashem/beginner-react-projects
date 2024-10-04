@@ -30,7 +30,7 @@ A collection of my beginner React projects to practice and showcase my skills.
 ![Screenshot](./image-slider/public/screenshot.png)
 
 - **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/image-slider)
-- **Live:** [Live Link](https://beginner-react-projects-seven.vercel.app/)
+- **Live:** [Live Link](https://beginner-react-projects-imageslider.vercel.app/)
 
 ## How to Use This Repository
 
