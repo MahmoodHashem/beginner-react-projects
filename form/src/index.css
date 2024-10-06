@@ -1,0 +1,160 @@
+:root {
+  --primary-clr: hsl(169, 82%, 27%);
+  --secondary-clr: hsl(148, 38%, 91%);
+  --red-clr: hsl(0, 66%, 54%);
+  --radio-clr: hsl(169, 82%, 27%, 0.17);
+  --border-clr: hsl(186, 15%, 59%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Karla;
+  src: url(./assets/fonts/Karla-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: Karla, sans-serif;
+  background-color: var(--secondary-clr);
+  height: 100vh;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+
+h4 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.container {
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-clr);
+  margin-top: 5px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary-clr) !important;
+}
+
+.type-label {
+  border: 1px solid;
+  margin: 2px;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: start;
+  flex: 1;
+  gap: 8px;
+}
+
+label:has(input[type="radio"]:checked) {
+  background-color: var(--radio-clr);
+  border-color: var(--primary-clr);
+}
+
+.name,
+.radios {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.checkbox-control {
+  display: grid;
+  grid-template-columns: 40px auto;
+  align-content: start;
+  margin: 10px 0;
+}
+
+.checkbox-control::after {
+  grid-column: span 2;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: var(--primary-clr);
+  color: white;
+  width: 100%;
+}
+
+/* Set Errors */
+
+input:user-invalid,
+textarea:user-invalid {
+  border-color: var(--red-clr);
+}
+
+.type-label:has(input:user-invalid) {
+  border-color: var(--red-clr);
+}
+
+.input-control:has(input:user-invalid)::after,
+.input-control:has(textarea:user-invalid)::after,
+.checkbox-control:has(input:user-invalid)::after {
+  content: attr(data-error); 
+  color: var(--red-clr);
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  .name, .radios{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .type-label, .input-control{
+    width: 100%;
+  }
+}
