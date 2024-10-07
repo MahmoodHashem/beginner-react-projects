@@ -9,6 +9,7 @@ A simple and interactive web application that allows users to search for GitHub 
 ## Table of Contents
 
 - [Features](#features)
+- [Link](#link)
 - [Technologies Used](#technologies-used)
 - [What I Learned](#what-i-learned)
 - [JavaScript Version](#javascript-version)
@@ -20,6 +21,10 @@ A simple and interactive web application that allows users to search for GitHub 
 - Toggle between light and dark modes.
 - Loading indicator while fetching user data.
 - Toast notifications for error handling and user feedback.
+
+## Link
+
+[Live site](https://github-finder-zeta-sepia.vercel.app/)
 
 ## Technologies Used
 

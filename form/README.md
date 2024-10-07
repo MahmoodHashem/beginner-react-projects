@@ -9,6 +9,7 @@ This React application is a contact form that allows users to submit inquiries. 
 ## Table of Contents
 
 - [Features](#features)
+- [Link](#links)
 - [Technologies Used](#technologies-used)
 - [What I Learned](#what-i-learned)
 - [JavaScript Version](#javascript-version)
@@ -20,6 +21,10 @@ This React application is a contact form that allows users to submit inquiries. 
 * **Dynamic Input Handling**: A single function handles changes for all input types, simplifying the codebase.
 * **Form Validation**: Uses the `required` attribute on inputs to enforce basic validation before submission.
 * **Responsive Layout**: The form is styled for a user-friendly experience across different devices.
+
+## Link
+
+[Live site](https://contact-form-vert-phi.vercel.app/)
 
 ## Technologies Used
 

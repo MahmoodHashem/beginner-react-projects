@@ -32,6 +32,20 @@ A collection of my beginner React projects to practice and showcase my skills.
 - **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/image-slider)
 - **Live:** [Live Link](https://beginner-react-projects-imageslider.vercel.app/)
 
+### **Contact Form**
+
+![Screenshot](./form/public/screenshot.png)
+
+- **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/form)
+- **Live:** [Live Link](https://contact-form-vert-phi.vercel.app/)
+
+### **Github Finder**
+
+![Screenshot](./github-user-search/public/screenshot.png)
+
+- **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/github-user-search)
+- **Live:** [Live Link](https://github-finder-zeta-sepia.vercel.app/)
+
 ## How to Use This Repository
 
 1. Clone the repository:
