@@ -46,6 +46,13 @@ A collection of my beginner React projects to practice and showcase my skills.
 - **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/github-user-search)
 - **Live:** [Live Link](https://github-finder-zeta-sepia.vercel.app/)
 
+### **Product List with Cart**
+
+![Screenshot](./product-list/public/screenshot.png)
+
+- **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/product-list)
+- **Live:** [Live Link](https://product-list-dun.vercel.app/)
+
 ## How to Use This Repository
 
 1. Clone the repository:
