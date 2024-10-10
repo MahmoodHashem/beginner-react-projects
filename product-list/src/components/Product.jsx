@@ -4,7 +4,7 @@
 import increment from '../assets/increment.svg'
 import decrement from '../assets/decrement.svg'
 
-import {  useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 
 
@@ -56,31 +56,37 @@ export default function Product(props) {
 
     return (
         <div className='product-container'>
-            <img
-                className={existingDessert ? "active-product" : ''}
-                src={`./images/${props.img}`}
-                alt="product"
-            />
-            {
-                existingDessert ?
-                    <button className='add-btn active-btn' ref={incrementButtonRef}>
-                        <img
-                            className='decrement-icon'
-                            onClick={() => props.remove(props.id)}
-                            src={decrement} alt="decrement-icon" />
-                        {existingDessert.quantity}
-                        <img
-                            className='increment-icon'
+            <div className="product-image">
+                <img
+                    className={existingDessert ? "active-product" : ''}
+                    src={`./images/${props.img}`}
+                    alt="product"
+                />
+
+                {
+                    existingDessert ?
+                        <button className='add-btn active-btn' ref={incrementButtonRef}>
+                            <img
+                                className='decrement-icon'
+                                onClick={() => props.remove(props.id)}
+                                src={decrement} alt="decrement-icon" />
+                            {existingDessert.quantity}
+                            <img
+                                className='increment-icon'
+                                onClick={() => props.add(props.desert)}
+                                src={increment}
+                                alt="increment-icon" />
+                        </button>
+                        :
+                        <button
+                            className='add-btn'
                             onClick={() => props.add(props.desert)}
-                            src={increment}
-                            alt="increment-icon" />
-                    </button>
-                    :
-                    <button
-                        className='add-btn'
-                        onClick={() => props.add(props.desert)}
-                    ><img src="./images/icon-add-to-cart.svg" className='add-icon' alt="add-icon" /> Add to Cart</button>
-            }
+                        ><img src="./images/icon-add-to-cart.svg" className='add-icon' alt="add-icon" /> Add to Cart</button>
+                }
+
+            </div>
+
+
             <h5 className='category'>{props.category}</h5>
             <h5 className='name'>{props.name}</h5>
             <h5 className='price'>${props.price}</h5>

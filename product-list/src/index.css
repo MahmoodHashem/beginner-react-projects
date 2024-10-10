@@ -97,12 +97,11 @@ button:focus{
 
 .cart {
   grid-row: 1 / 3;
-  grid-column: 2 / 4;
+  grid-column: 3 / 4;
   margin: 0.5rem;
   background: white;
   padding: 2rem;
   border-radius: 1rem;
-  width: 35rem;
   height: min-content;
   max-height: 500px;
   overflow-y: scroll;
@@ -199,6 +198,7 @@ p {
   font-family: RedhatBold, sans-serif;
   color: var(--Rose500);
   font-size: 2rem;
+  text-align: center;
 }
 
 /* ********* End Cart styles ************* */
@@ -211,40 +211,40 @@ p {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-column: 1;
+  grid-template-columns: repeat(3,1fr);
+  grid-column: span 2;
   gap: 1rem;
 }
 
-.product-container {
-  width: 20rem;
+.product-image {  
   position: relative;
 }
 
-.product-container > img {
+.product-image > img {
   border-radius: 1rem;
   width: 100%;
 }
 
 .add-btn {
-  width: 13rem;
+  width: 50%;
+  max-width: 14rem;
   height: 4rem;
   border: 1px solid var(--Rose900);
   border-radius: 2rem;
   outline: none;
   background-color: white;
   color: black;
-  padding: 1rem 2rem;
+  padding: 1rem;
   position: absolute;
-  bottom: 25%;
-  left: 20%;
+  bottom: -10px; 
+  left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: inherit;
   font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .add-btn:hover {
@@ -324,7 +324,7 @@ p {
   border-radius: 1rem;
   padding: 1.5rem;
   width: 35rem;
-  height: 450px;
+  max-height: 450px;
   overflow-y: scroll;
 }
 
@@ -374,13 +374,14 @@ p {
 
 /* ********* Media queries *********** */
  @media screen and (max-width: 900px) {
-  .main {
-    grid-template-columns: 1fr 1fr;
-  }
+  
 
   .products {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
   }
+
+
+
 }
 
 @media screen and (max-width: 750px) {
@@ -405,24 +406,17 @@ p {
     bottom: 10%;
   }
 
-  .add-btn{
-    bottom: 32%;
-  }
+
 }
 
 @media screen and (max-width: 550px) {
   html{
-    font-size: 8px;
+    font-size: 10px;
   }
 
-  .add-btn{
-    bottom: 30%;
-  }
   .products {
     grid-template-columns: auto;
   }
 
-  .modal {
-    max-width: 30rem;
-  }
+
 }
