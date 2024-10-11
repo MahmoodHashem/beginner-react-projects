@@ -219,8 +219,22 @@ select {
     flex-direction: column-reverse;
   }
 
-
   .contacts{
     grid-template-columns: 1fr;
+  }
+
+  .jobs{
+    grid-template-columns: 1fr;
+  }
+
+  .job-description {
+    border: 0px solid !important;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  html{
+    font-size: 14px;
   }
 }
