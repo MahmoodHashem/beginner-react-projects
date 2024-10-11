@@ -218,4 +218,9 @@ select {
   #root {
     flex-direction: column-reverse;
   }
+
+
+  .contacts{
+    grid-template-columns: 1fr;
+  }
 }
