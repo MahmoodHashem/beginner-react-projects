@@ -53,6 +53,14 @@ A collection of my beginner React projects to practice and showcase my skills.
 - **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/product-list)
 - **Live:** [Live Link](https://product-list-dun.vercel.app/)
 
+### **Dev CV Maker**
+
+![Screenshot](./dev-cv-maker/public/screenshot.png)
+
+- **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/dev-cv-maker)
+- **Live:** [Live Link](https://dev-cv-maker.vercel.app/)
+
+
 ## How to Use This Repository
 
 1. Clone the repository:
