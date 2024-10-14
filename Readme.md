@@ -60,6 +60,13 @@ A collection of my beginner React projects to practice and showcase my skills.
 - **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/dev-cv-maker)
 - **Live:** [Live Link](https://dev-cv-maker.vercel.app/)
 
+### **Moive App**
+
+![Screenshot](./movie-app/public/screenshot.png)
+
+- **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/movie-app)
+- **Live:** [Live Link](https://movie-land-teal.vercel.app/)
+
 
 ## How to Use This Repository
 
