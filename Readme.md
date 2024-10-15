@@ -1,5 +1,7 @@
 # My Beginner React Projects
 
+[![wakatime](https://wakatime.com/badge/user/da6980bd-5884-44cf-b12d-d601697eabec/project/cfab234c-d843-45a0-ab43-9df0d47eb69d.svg)](https://wakatime.com/badge/user/da6980bd-5884-44cf-b12d-d601697eabec/project/cfab234c-d843-45a0-ab43-9df0d47eb69d)
+
 A collection of my beginner React projects to practice and showcase my skills.
 
 ## Projects Overview
@@ -67,6 +69,12 @@ A collection of my beginner React projects to practice and showcase my skills.
 - **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/movie-app)
 - **Live:** [Live Link](https://movie-land-teal.vercel.app/)
 
+### **Recursive Navigation**
+
+![Screenshot](./world-tree-view/public/screenshot.gif)
+
+- **Repo:** [Repository](https://github.com/MahmoodHashem/beginner-react-projects/tree/main/world-tree-view)
+- **Live:** [Live Link](https://movie-land-teal.vercel.app/)
 
 ## How to Use This Repository
 
