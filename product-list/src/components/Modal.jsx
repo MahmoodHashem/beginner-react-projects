@@ -13,14 +13,28 @@
  * @returns {JSX.Element} JSX element representing the order confirmation modal.
  */
 
+import { useRef, useEffect } from "react";
+
 export default function Modal(props) {
 
-    let isOpen = props.open;
+    const ref = useRef()
+     let isOpen = props.open;
+
+    useEffect(() => {
+      
+        if(isOpen){
+            ref.current?.showModal()
+        }else{
+            ref.current?.close()
+        }
+        
+    }, [isOpen])
+    
+
+    
 
     return (
-        <div className="modal-wrapper">
-            <div className="backdrop"></div>
-            <dialog open={isOpen} className="modal">
+            <dialog ref={ref}  className="modal">
                 <img src="./images/icon-order-confirmed.svg" className="confirm-icon" alt="confirm-icon" />
                 <h1>Order Confirmed</h1>
                 <p>We hope you enjoy your food!</p>
@@ -59,7 +73,7 @@ export default function Modal(props) {
                 </div>
                 <button className="confirm-btn" onClick={props.close} >Start new order</button>
             </dialog>
-        </div>
+      
     )
 
 
